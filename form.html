@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Survey Form</title>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		/>
+		<!-- Google Fonts -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+		/>
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Material Design Bootstrap -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css"
+			rel="stylesheet"
+		/>
+
+		<!--custom css-->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1 class="text-center">AbbshardCode Camp Survey Form</h1>
+				<h6 class="text-center">
+					Thank you for taking the time to help us improve the platform
+				</h6>
+				<form action="" id="survey-form">
+					<div class="form-group">
+						<label for="name" id="name-label">Name</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="form-control"
+							placeholder="Enter your name"
+							required
+						/>
+					</div>
+
+					<div class="form-group">
+						<label for="email" id="email-label">Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							class="form-control"
+							placeholder="Enter your Email"
+							required
+						/>
+					</div>
+
+					<div class="form-group">
+						<label for="number" id="number-label"
+							>Age
+							<span>(Optional)</span>
+						</label>
+						<input
+							type="number"
+							name="age"
+							id="number"
+							min="10"
+							max="80"
+							class="form-control"
+							placeholder="Age"
+							required
+						/>
+					</div>
+
+					<div class="form-group">
+						<p>which option best describe your current role?</p>
+						<select name="role" id="dropdown" class="form-control" required>
+							<option value="">Select current role</option>
+							<option value="student">student</option>
+							<option value="job">Full Time Learner</option>
+							<option value="preferNo"> prefr not to say</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<p>Would you recommend AbbshardCodeCamp to a friend</p>
+						<div class="custom-control custom-radio">
+							<input
+								type="radio"
+								class="custom-control-input"
+								id="Definitely"
+								name="user-recommed"
+								checked
+							/>
+							<label class="custom-control-label" for="definitely"
+								>Definitely</label
+							>
+						</div>
+
+						<div class="custom-control custom-radio">
+							<input
+								type="radio"
+								class="custom-control-input"
+								id="maybe"
+								name="user-recommed"
+							/>
+							<label class="custom-control-label" for="definitely">Maybe</label>
+						</div>
+
+						<div class="custom-control custom-radio">
+							<input
+								type="radio"
+								class="custom-control-input"
+								id="notsure"
+								name="user-recommed"
+							/>
+							<label class="custom-control-label" for="definitely"
+								>Not sure</label
+							>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>What is your favourite feature of AbbshardCodeCamp</p>
+						<select
+							name="favourite"
+							id="favourite"
+							class="form-control"
+							required
+						>
+							<option value="">Select an option</option>
+							<option value="challenges">Challenges</option>
+							<option value="projects">Projects</option>
+							<option value="community">Community</option>
+							<option value="openSource">Open Source</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<p>
+							What Would you like to see improved?
+							<span>(check all that apply)</span>
+						</p>
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="front-end-projects"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="front-end-projects"
+								class="input-checkbox"
+								>front-end-projects</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="back-end-projects"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="back-end-projects"
+								class="input-checkbox"
+								>Back-end-projects</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="data-visualization"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="data-visualization"
+								class="input-checkbox"
+								>Data-visualization</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="challenges"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="challenges"
+								class="input-checkbox"
+								>Challenges</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="open-source-community"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="open-source-community"
+								class="input-checkbox"
+								>Open-Source-Community</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="gitter-help-rooms"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="gitter-help-rooms"
+								class="input-checkbox"
+								>Gitter-Help-Rooms</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="videos" />
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="videos"
+								class="input-checkbox"
+								>Videos</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="city-meetups"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="city-meetups"
+								class="input-checkbox"
+								>City-Meetups</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="forum" />
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="forum"
+								class="input-checkbox"
+								>Forum</label
+							>
+						</div>
+
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="additional-courses"
+							/>
+							<label
+								class="custom-control-label"
+								for="improved"
+								value="additional-courses"
+								class="input-checkbox"
+								>Additional-Courses</label
+							>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p>Any comments or suggestions?</p>
+						<textarea
+							name="comment"
+							id="comments"
+							placeholder="enter your comment hear"
+							class="input-textarea"
+						></textarea>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" id="submit" class="submit-button">
+							submit
+						</button>
+					</div>
+				</form>
+			</header>
+		</div>
+		<!--script-->
+		<!-- JQuery -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		></script>
+		<!-- Bootstrap tooltips -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+		></script>
+		<!-- Bootstrap core JavaScript -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+		></script>
+		<!-- MDB core JavaScript -->
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"
+		></script>
+	</body>
+</html>

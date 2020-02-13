@@ -1,0 +1,82 @@
+:root {
+	--color-white: #f3f3f3;
+	--color-darkblue: #1b1b32;
+	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+	--color-green: #37af65;
+}
+body {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.4;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient(
+			115deg,
+			rgba(16, 16, 241, 0.8),
+			rgba(32, 32, 83, 0.7)
+		),
+		url('images/img-1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	margin: 3.125rem auto 0 auto;
+}
+
+div {
+	display: block;
+}
+
+.text-center {
+	text-align: center;
+}
+h1,
+p {
+	margin-top: 20px;
+	margin-bottom: 0.5rem;
+}
+h1 {
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h6 {
+	display: block;
+	font-style: italic;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+form {
+	background: var(--color-darkblue-alpha);
+	border-radius: 0.25rem;
+	display: block;
+	margin-top: 0em;
+	padding: 2.5rem 0.625rem;
+}
+.form-group {
+	margin: 0 auto 1.25rem auto;
+	padding: 0.25rem;
+}
+.input-textarea {
+	min-height: 120px;
+	width: 100%;
+	padding: 0.625rem;
+	resize: vertical;
+}
+
+.submit-button {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	background: blue;
+	color: inherit;
+	border-radius: 2px;
+	cursor: pointer;
+	border: none;
+}
